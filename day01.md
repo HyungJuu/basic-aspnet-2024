@@ -145,7 +145,7 @@
             ```
             
         - textarea : 여러행의 텍스트 입력
-        - select : 콤보박스
+        - select, option(optgroup) : 콤보박스(분류)
         - fieldset : 그룹박스
 
         - **submit 클릭 &rarr; loopback(값 전달) 발생**
@@ -159,3 +159,7 @@
                 ```
                 http://127.0.0.1:5500/day01/html05_input.html
                 ```
+
+    - 공간구분 태그
+        - div(가장 많이씀) : 줄바꿈o, 행간으로 블록 공간구성
+        - span : 줄바꿈x, 글자 영역만큼(문장단위)만 공간 구분, 한줄로 공간구성

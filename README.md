@@ -11,5 +11,11 @@
 
 - [업무용 웹 사이트 참조](https://www.ecount.com/kr/ECK/ECK004M_CN.aspx)
 
+- HTML5 기본 구성요소
 
 ## 2일차 (24.05.30)
+- HTML5
+    - 시맨틱 태그
+- CSS3
+    - 웹 디자인 핵심
+-javascript
