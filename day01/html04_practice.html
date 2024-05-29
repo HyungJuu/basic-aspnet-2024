@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>스타일, 스크립트 사용법</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+
+    <!-- style, script 안의 주석은 /* */ 형식으로 사용 -->
+    <style>
+        /* CSS를 HTML 내부에 적용하는 방법 */
+        /* h1에 모두 적용됨 */
+        h1 {
+            color: white;
+            background-color: darkcyan;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" media="screen" href="practice.css">
+    <script>
+        /* 주석 */
+        /* 내부 스크립트. <script> 태그는 <body> 내에도 사용 가능 */
+        var name = prompt("이름을 입력하세요");
+        alert("나의 이름은 " + name); // Messagebox.Show()와 같음
+    </script>
+
+    <script src="practice.js"></script> <!-- 내부 스크립트 실행 후 외부 스크립트 실행됨 -->
+</head>
+<body>
+    <h1>HTML Start!!</h1>
+    <h2>Have fun~!!</h2>
+    <h1>Second Heading1</h1>
+    <h2 style="color: steelblue;">Second Heading2</h2> <!-- 지정시 전체설정과 다르게 따로 가능  -->
+    
+</body>
+</html>
