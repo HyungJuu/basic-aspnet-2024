@@ -62,7 +62,9 @@
         - table, tr, th, td : 테이블을 만드는 태그
             - colspan : 테이블 열 병합(좌우)
             - rowspan : 테이블 행 병합(상하)
-        - audio, video : 오디오, 비디오 추가
+        - audio, video : [오디오](https://file-examples.com/index.php/sample-audio-files/sample-mp3-download/), [비디오](https://samplelib.com/sample-mp4.html) 추가
         - object,  embed : 객체 추가
 
-        ![기본요소1]()
+        ![기본요소1](https://raw.githubusercontent.com/HyungJuu/basic-aspnet-2024/main/images/html001.png)
+
+        ![기본요소2](https://raw.githubusercontent.com/HyungJuu/basic-aspnet-2024/main/images/html002.png)
