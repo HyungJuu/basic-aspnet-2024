@@ -9,10 +9,9 @@
         - Back-end : 웹사이트 뒤에서 동작하는 서버 기술
         - Server-Operation : HW, OS, SW 등 운영(클라우드)
 
-- 업무용 웹 사이트 참조
-    - https://www.ecount.com/kr/ECK/ECK004M_CN.aspx
+- [업무용 웹 사이트 참조](https://www.ecount.com/kr/ECK/ECK004M_CN.aspx)
 
-- Front-end(클라리언트)
+- Front-end(클라이언트)
     - HTML5
     - CSS3
     - Javascript
@@ -32,25 +31,38 @@
     - VS Code 플러그인
         - HTML Code Snippet
         - Live Server
+
 - HTML5
-    - XML : 웹페이지를 구성하기 위한 선행기술, 너무 복잡해서 간략화 시킨것
+    - XML : 웹페이지를 구성하기 위한 선행기술 &rarr; 너무 복잡해서 간략화 시킨것
     - Hyper Text Markup Language
-    - 기본적으로 확장자 .html
+    - 기본적으로 확장자  &rarr; .html
     - **tip!** lorem 탭, 긴 샘플텍스트 생성
     - 요소(body)
-        - h1 ~ h6 : 제목(마크다운의 (#,##)제목 기능과 동일)
+        - h1 ~ h6 : 제목 &rarr; 마크다운의 (#,##)제목 기능과 동일
         - p : 일반문장
         - div : 그룹핑(그룹화) 구분자, 아주 중요(CSS 연계 디자인)
         - img : 이미지 표현
         - br : 다음줄로 내리기(엔터)
         - 특수문자 : &(영문자); 형식으로 표시(종류가 많음)
-        ```
-        &lt; : <
-        &gt; : >
-        &amp; : &
-        &copy; : ©
-        &plusmn; ±
-        &nbsp; : 공백
-        ```
+            ```
+            &lt; : <
+            &gt; : >
+            &amp; : &
+            &copy; : ©
+            &plusmn; : ±
+            &nbsp; : 공백
+            ```
         - strong 또는 b : 볼드체
         - em : 이탤릭체(기울임)
+        - mark : 형광펜 효과(강조)
+        - u : 밑줄
+        - strike : 취소선
+        - **a : 웹페이지 링크(중요)**
+        - ul, ol ; 순서없는 목록 | 순번있는 목록
+        - table, tr, th, td : 테이블을 만드는 태그
+            - colspan : 테이블 열 병합(좌우)
+            - rowspan : 테이블 행 병합(상하)
+        - audio, video : 오디오, 비디오 추가
+        - object,  embed : 객체 추가
+
+        ![기본요소1]()
