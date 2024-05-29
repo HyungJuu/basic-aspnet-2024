@@ -118,3 +118,44 @@
             // 외부 스크립트 -> practice.js
             alert("from js file!!!");
             ```
+    
+    - 오류, 디버그
+        - F12 개발자도구 활용
+    
+    - 양식태그(body > form 안에 사용 필수)
+        - front-end에서 입력한 내용을 back-end로 보내기 위한 관문
+        - form을 반드시 사용
+        - input
+
+            ```md
+            - type="text" : 텍스트박스
+            - type="password" : 비밀번호 박스
+            - type="file" : 파일 업로드
+            - type="checkbox" : 체크박스
+            - type="radio" : 라디오버튼 (name이 동일해야 함)
+            - type="hidden" : 숨김값(유용하게 사용!!!)
+            - [type="image"](https://via.placeholder.com/320x200) : 이미지(img와 유사)
+            - type="color" : 색상표
+            - type="date" : 날짜 선택
+            - type="number" : 숫자 입력(up/down)
+
+            - type="button" : 일반 버튼
+            - type="reset" : 폼 내의 입력양식태그 값 초기화
+            - type="submit" : 제출(!)
+            ```
+            
+        - textarea : 여러행의 텍스트 입력
+        - select : 콤보박스
+        - fieldset : 그룹박스
+
+        - **submit 클릭 &rarr; loopback(값 전달) 발생**
+        - 값 전달 방법
+            - GET : URL 뒤에 ?key=value&key=value... 형식으로 데이터 전달
+                ```
+                http://127.0.0.1:5500/day01/html05_input.html?id=admin&pass=1234
+                ```
+
+            - POST : 화면뒤로 숨겨서 데이터 전달 방식
+                ```
+                http://127.0.0.1:5500/day01/html05_input.html
+                ```
