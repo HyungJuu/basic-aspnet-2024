@@ -134,7 +134,7 @@
             - type="checkbox" : 체크박스
             - type="radio" : 라디오버튼 (name이 동일해야 함)
             - type="hidden" : 숨김값(유용하게 사용!!!)
-            - [type="image"](https://via.placeholder.com/320x200) : 이미지(img와 유사)
+            - type="image" : 이미지(img와 유사) -> https://www.placeholder.com/
             - type="color" : 색상표
             - type="date" : 날짜 선택
             - type="number" : 숫자 입력(up/down)
