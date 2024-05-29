@@ -25,8 +25,9 @@
 - HTML5
     - XML : 웹페이지를 구성하기 위한 선행기술 &rarr; 너무 복잡해서 간략화 시킨것
     - Hyper Text Markup Language
-    - 기본적으로 확장자  &rarr; .html
+    - 기본 확장자 &rarr; <.html>
     - **tip!** lorem 탭, 긴 샘플텍스트 생성
+
     - 요소(body)
         - h1 ~ h6 : 제목 &rarr; 마크다운의 (#,##)제목 기능과 동일
         - p : 일반문장
@@ -68,50 +69,52 @@
     - HTML + CSS + Javascript
         - 내부 스타일, 외부 스타일, 인라인 스타일
 
-        ```html
-        <head>
-            <style>
-                /* CSS를 HTML 내부에 적용하는 방법 */
-                /* h1에 모두 적용됨 */
-                h1 {
-                    color: white;
-                    background-color: darkcyan;
-                }
-            </style>
-            <link rel="stylesheet" type="text/css" media="screen" href="practice.css"> <!-- 외부링크 -->
-        </head>
+            ```html
+            <head>
+                <style>
+                    /* CSS를 HTML 내부에 적용하는 방법 */
+                    /* h1에 모두 적용됨 */
+                    h1 {
+                        color: white;
+                        background-color: darkcyan;
+                    }
+                </style>
+                <link rel="stylesheet" type="text/css" media="screen" href="practice.css"> <!-- 외부링크 -->
+            </head>
 
-        <body>
-        <h1>HTML Start!!</h1>
-        <h2>Have fun~!!</h2>
-        <h1>Second Heading1</h1>
-        <h2 style="color: steelblue;">Second Heading2</h2> <!-- 지정시 전체설정과 다르게 따로 가능  -->
-        </body>
-        ```
+            <body>
+            <h1>HTML Start!!</h1>
+            <h2>Have fun~!!</h2>
+            <h1>Second Heading1</h1>
+            <h2 style="color: steelblue;">Second Heading2</h2> <!-- 지정시 전체설정과 다르게 따로 가능  -->
+            </body>
+            ```
 
-        ```css
-        h2 {
-            color: midnightblue;
-            background-color: mediumaquamarine;
-        }
-        ```
+            ```css
+            /* 외부 스타일 -> practice.css */
+            h2 {
+                color: midnightblue;
+                background-color: mediumaquamarine;
+            }
+            ```
 
         - 내부 스크립트, 외부 스크립트, 인라인 스크립트
 
-        ```html
-        <head>
-            <script>
-                /* 주석 */
-                /* 내부 스크립트. <script> 태그는 <body> 내에도 사용 가능 */
-                var name = prompt("이름을 입력하세요");
-                alert("나의 이름은 " + name); // Messagebox.Show()와 같음
-            </script>
+            ```html
+            <head>
+                <script>
+                    /* 주석 */
+                    /* 내부 스크립트. <script> 태그는 <body> 내에도 사용 가능 */
+                    var name = prompt("이름을 입력하세요");
+                    alert("나의 이름은 " + name); // Messagebox.Show()와 같음
+                </script>
 
-            <script src="practice.js"></script> <!-- 외부 스크립트 -->
-            <!-- 내부 스크립트 실행 후 외부 스크립트 실행됨 -->
-        </head>
-        ```
+                <script src="practice.js"></script> <!-- 외부 스크립트 -->
+                <!-- 내부 스크립트 실행 후 외부 스크립트 실행됨 -->
+            </head>
+            ```
 
-        ```js
-        alert("from js file!!!");
-        ```
+            ```js
+            // 외부 스크립트 -> practice.js
+            alert("from js file!!!");
+            ```
