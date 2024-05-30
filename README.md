@@ -18,6 +18,6 @@
     - 시맨틱 웹
 - CSS3
     - 웹 디자인 핵심
--javascript
+- Javascript
 
 ## 3일차 (24.05.31)

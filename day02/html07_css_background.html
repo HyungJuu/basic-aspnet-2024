@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS BackgroundImage</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        /* 배경 이미지 */
+        body {
+            /* 아래의 background와 동일 
+            background-color: rgb(236, 236, 236);
+            background-image: url('./backtile.gif');
+            background-repeat: no-repeat;
+            background-position: top;
+            background-attachment:  fixed; 
+            */
+            background: url('./backtile.gif') repeat fixed top rgb(236, 236, 236);
+        }
+
+        /* xx-small ~ xx-large, px, %, em ... -> px을 가장 많이 씀 */
+        p {
+            font-size: 20px;
+            font-family: NanumGothic;
+            font-style: normal;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .test {
+            width: 300px;
+            height: 150px;
+            background: #746fff;
+            background: linear-gradient(90deg,#b0ffff 0%, #746fff 80%);
+            background: -webkit-linear-gradient(90deg,#b0ffff 0%, #746fff 80%);
+            background: -moz-linear-gradient(90deg,#b0ffff 0%, #746fff 80%);
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.naver.com">네이버</a>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <div class="test"></div>
+</body>
+</html>
