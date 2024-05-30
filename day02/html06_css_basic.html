@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS 기본</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        /* 
+            CSS 기본문법
+            선택자 { 키:값; 키:값; 키:값; }
+            * : 모든 태그
+        */
+        h1 {
+            color: slateblue;
+            background-color: rgb(46, 39, 92);
+        }
+
+        h2 {
+            color: rgb(54, 37, 165);
+        }
+
+        /* 선택한 태그에만 속성 적용 */
+        h1, h2 {
+            margin: 5px;
+            /* padding: 10px; */
+        }
+
+        /* #을 쓰지않으면 적용안됨, 대소문자 구분 */
+        #header { 
+            width: 600px;
+            /* height: 90px; */
+            margin: 0 auto; /* margin: 0 auto; 항상 정중앙에 위치 */
+            background-color: rgb(177, 165, 255);
+        }
+
+        #section {
+            width: 600px;
+            margin: 0 auto;
+            overflow: hidden; /* 현재 사이즈가 600인데 자식개체 사이즈가 600을 넘어가면 잘라버린다 */
+        }
+
+        #content {
+            width: 400px;
+            height: 250px;
+            float: left;
+            background-color: rgb(128, 110, 245);
+        }
+
+        #aside {
+            width: 200px;
+            height: 150px;
+            float: right;
+            background-color: rgb(85, 74, 156);
+        }
+        /* 클래스 선택자 */
+        .favorite {
+            color: rgb(87, 64, 241);
+        }
+
+        .options {
+            background-color: rgb(215, 209, 255);
+        }
+
+        /* 속성 선택자 */
+        input[type="text"] { background-color:rgb(224, 224, 224);}
+        input[type="password"] { background-color:rgb(219, 219, 219);}
+        input[type="submit"] { background-color:darkslategrey; color: rgb(183, 172, 255);}
+
+        /* 후손 선택자 */
+        #header h4 { color: azure; } /* header 아래의 h4 적용 */
+
+        /* 자손 선택자 (>) */
+        #section > #content { font-style: italic; } /* section 바로밑의 div에 모두 적용하겠다. h3는 불가능(후손) -> 하려면 (>)를 지워야 한다 */
+
+        /* 반응 선택자 */
+        h1:hover { color: yellow; }
+        h1:active { color: black; }
+
+        /* 상태 선택자 */
+        input:disabled {background-color: gray; }
+
+        /* 구조 선택자 */
+        .second-nav > ul { overflow: hidden; } /* 자손 */
+        .second-nav li { /* 후손 */
+            list-style: none;
+            color: aliceblue;
+            float: left;
+            padding: 10px;
+        }
+        .second-nav li:first-child {
+            border-radius: 10px 0 0 10px;
+        }
+        .second-nav li:last-child {
+            border-radius: 0 10px 10px 0;
+        }
+
+        .second-nav li:nth-child(2n+1) {
+            background-color: rgb(131, 109, 254);
+        }
+        .second-nav li:nth-child(2n) {
+            background-color: rgb(184, 151, 225);
+        }
+        
+        /* border, margin, padding은 left, right, bottom, top 추가 속성이 있음 */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(185, 147, 255);
+            border: 20px dashed rgb(145, 103, 249);
+            /* 위의 border와 동일한 속성 
+            border-width: 20px;
+            border-style: dashed;
+            border-color: rgb(145, 103, 249); */
+            margin: 20px;
+            padding: 30px;
+            border-radius: 10px;
+            display: block;
+        }
+</style>
+</head>
+<body>
+    <h1>CSS Basic</h1>
+    <h2>Basic 문법</h2>
+    <hr>
+    <div>
+        <ul>
+            <li class="favorite options">기본 선택자</li>
+            <li>아이디, 클래스 선택자</li>
+            <li>속성 선택자</li>
+            <li class="favorite">후손 선택자</li>
+        </ul>
+    </div>
+    <div id="header">
+        <h3 class="favorite">#header 영역</h3>
+        <div id="nav">
+            <h4>Navigation(메뉴) 영역</h4>
+        </div>
+        <div>
+            <h4>옵션</h4>
+        </div>
+    </div>
+    <div id="section">
+        <!-- id는 같은값을 한페이지에 두개 넣으면 안됨(중복x) -->
+        <div id="content">
+            <h3>#content 영역</h3>
+        </div>
+        <div id="aside">
+            <h3>#aside 영역</h3>
+            <ul id="menu">
+                <li><a href="#">영한 소개</a></li>
+                <li>영한 컬럼</li>
+                <li>영한 프로젝트</li>
+            </ul>
+        </div>
+    </div>
+    <form>
+        <input type="text" disabled="disabled"><br>
+        <input type="password"><br>
+        <input type="submit"><br>
+    </form>
+    <div class="second-nav">
+        <ul>
+            <li>첫번째 메뉴</li>
+            <li>두번째 메뉴</li>
+            <li>세번째 메뉴</li>
+            <li>네번째 메뉴</li>
+            <li>다섯번째 메뉴</li>
+            <li>여섯번째 메뉴</li>
+            <li>일곱번째 메뉴</li>
+        </ul>
+    </div>
+    <div class="box"></div>
+</body>
+</html>

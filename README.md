@@ -13,9 +13,11 @@
 
 - HTML5 기본 구성요소
 
-## 2일차 (24.05.30)
+## [2일차 (24.05.30)](https://github.com/HyungJuu/basic-aspnet-2024/blob/main/day02.md)
 - HTML5
-    - 시맨틱 태그
+    - 시맨틱 웹
 - CSS3
     - 웹 디자인 핵심
 -javascript
+
+## 3일차 (24.05.31)
