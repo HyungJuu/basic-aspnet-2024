@@ -19,10 +19,13 @@
 - CSS3
     - 웹 디자인 핵심
 
-## 3일차 (24.05.31)
+## [3일차 (24.05.31)](https://github.com/HyungJuu/basic-aspnet-2024/blob/main/day03.md)
 - Javascript
     - 스크립트 언어, ECMAScript
     - 웹브라우저 주로 사용
     - 바닐라스크립트 : 완벽하게 기본에 충실한 자바스크립트
+    - DOM(Document Object Model)
+    - jQuery
 
 ## 4일차 (24.06.03)
+- HTML + CSS + js(jQuery) 응용
