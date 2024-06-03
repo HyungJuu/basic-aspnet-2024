@@ -31,3 +31,8 @@
 - HTML + CSS + js(jQuery) 응용
     - jQuery 응용
     - Bootstrap
+    - 웹페이지 클로닝
+
+## 5일차 (24.06.04)
+- HTML + CSS + js(jQuery) 응용
+    - 웹페이지 클로닝
