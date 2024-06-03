@@ -13,3 +13,12 @@
         - (2) CDN으로 링크만 사용
             - 제한된 네트워크에서는 1번
             - 인터넷에 항상 연결된 환경에서는 2번이 편리
+        - **핵심!!**
+            - Bootstrap은 화면사이즈를 12등분
+                - 12등분을 넘어가면 디자인 깨짐
+            - container 및에 마치 테이블처럼 div를 구분해서 사용
+            - container > row > col div 태그에 클래스 정의
+        - 부트스트랩 학습에 시간을 들이는게 아님. Copyleft가 정석!
+            - [부트스트랩 참조](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+            - [스니펫 활용 추천](https://getbootstrap.com/docs/5.3/examples/)
+        - [무료 테마(템플릿)](https://startbootstrap.com/)가 아주 잘되어 있음
