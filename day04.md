@@ -1,0 +1,15 @@
+## 4일차 (24.06.03)
+- HTML + CSS + js(jQuery) 응용
+    - jQuery 응용
+        - javascript와 jQuery를 혼용해도 상관없음
+        - jQuery가 편할 때와 javascript가 편할 때가 있음
+            - jq04 파일은 혼용 / jq05 파일은 javascript만 사용함 
+    - Bootstrap
+        - 오픈소스 CSS 프레임워크
+        - 이름 : 트위터 블루프린트 &rarr; 부트스트랩
+        - 현재 전세계에서 가장 각광받는 프레임워크 중 하나
+        - CSS를 동작시키기 위해서 Javascript도 포함
+        - (1) 소스를 다운로드 받아서 사용
+        - (2) CDN으로 링크만 사용
+            - 제한된 네트워크에서는 1번
+            - 인터넷에 항상 연결된 환경에서는 2번이 편리
