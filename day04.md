@@ -24,6 +24,6 @@
         - [무료 테마(템플릿)](https://startbootstrap.com/)가 아주 잘되어 있음
     
     - 웹페이지 클로닝
-        - 핀터레스트 타입의 웹페이지 만들기(진행중)
+        - 핀터레스트 타입 + 부트스트랩 웹페이지 만들기(진행중)
 
         ![핀터레스트 클로닝](https://raw.githubusercontent.com/HyungJuu/basic-aspnet-2024/main/images/html006.png)
