@@ -40,3 +40,6 @@
         - 핀터레스트 타입 + 부트스트랩 웹페이지 만들기(완료)
 
         - [Codehal 유튜버(https://www.youtube.com/@codehal)] 로그인 웹페이지 튜토리얼
+            - [박스아이콘](https://boxicons.com/?query=lock)
+            - [구글폰트](https://fonts.google.com/)
+                - 원하는 폰트 클릭 &rarr; Get font &rarr; <> Get embed code &rarr; Web의 코드들 사용
