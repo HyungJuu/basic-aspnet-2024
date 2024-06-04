@@ -45,6 +45,9 @@
 
             <img src="https://raw.githubusercontent.com/HyungJuu/basic-aspnet-2024/main/images/html007.png" width="800" alt="Codehal 로그인창 따라하기">
         
+        - Codehal 슬라이더 애니메이션 웹페이지 튜토리얼 따라하기
+        
+        
         - 따라하기 예제들(유튜브 &rarr; 'html css tutorial for beginners' 검색)
             1. https://youneedawiki.com/app/page/1KyHCy_-dHyGPtai9RG1ta8QjGaw7DrBOdFZtv6Ncxyo
             2. https://www.youtube.com/watch?v=NGzOcLMn93M
@@ -56,5 +59,4 @@
             5. https://www.youtube.com/watch?v=LlPQk6ajrnE
                 - [샘플코드](https://github.com/HoanghoDev/parallax_scroll)
             6. ...
-        
         
