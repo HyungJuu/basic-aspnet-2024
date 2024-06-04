@@ -19,6 +19,8 @@
 - CSS3
     - 웹 디자인 핵심
 
+    ![레이아웃](https://raw.githubusercontent.com/HyungJuu/basic-aspnet-2024/main/images/html005.png)
+
 ## [3일차 (24.05.31)](https://github.com/HyungJuu/basic-aspnet-2024/blob/main/day03.md)
 - Javascript
     - 스크립트 언어, ECMAScript
@@ -39,7 +41,20 @@
     - 웹페이지 클로닝
         - 핀터레스트 타입 + 부트스트랩 웹페이지 만들기(완료)
 
-        - [Codehal 유튜버(https://www.youtube.com/@codehal)] 로그인 웹페이지 튜토리얼
-            - [박스아이콘](https://boxicons.com/?query=lock)
-            - [구글폰트](https://fonts.google.com/)
-                - 원하는 폰트 클릭 &rarr; Get font &rarr; <> Get embed code &rarr; Web의 코드들 사용
+        - [Codehal 유튜버](https://www.youtube.com/@codehal) 로그인 웹페이지 튜토리얼 따라하기
+
+            <img src="https://raw.githubusercontent.com/HyungJuu/basic-aspnet-2024/main/images/html007.png" width="800" alt="Codehal 로그인창 따라하기">
+        
+        - 따라하기 예제들(유튜브 &rarr; 'html css tutorial for beginners' 검색)
+            1. https://youneedawiki.com/app/page/1KyHCy_-dHyGPtai9RG1ta8QjGaw7DrBOdFZtv6Ncxyo
+            2. https://www.youtube.com/watch?v=NGzOcLMn93M
+                - [샘플코드](https://drive.google.com/file/d/1r3Ok5mNWlKKjJwJhOjR_VMAryqhqJK8y/view)
+            3. https://www.youtube.com/watch?v=p1GmFCGuVjw&t=14s
+                - [샘플코드](https://drive.google.com/file/d/12UwjFTg1oE6uToNpq2AYXwLIotkdNk-M/view)
+            4. https://www.youtube.com/watch?v=KOJ8RT-NxHg
+                - [샘플코드](https://drive.google.com/file/d/1p34brLH6arUmgwe0zLldFNPi0X--Bvd_/view)
+            5. https://www.youtube.com/watch?v=LlPQk6ajrnE
+                - [샘플코드](https://github.com/HoanghoDev/parallax_scroll)
+            6. ...
+        
+        

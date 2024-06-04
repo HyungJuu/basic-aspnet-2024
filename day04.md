@@ -25,5 +25,8 @@
     
     - 웹페이지 클로닝
         - 핀터레스트 타입 + 부트스트랩 웹페이지 만들기(진행중)
-
-        ![핀터레스트 클로닝](https://raw.githubusercontent.com/HyungJuu/basic-aspnet-2024/main/images/html006.png)
+            - 라이트 박스
+            - 테마 설정 버튼
+                - Light / Dark
+        
+            <!-- ![핀터레스트 클로닝](https://raw.githubusercontent.com/HyungJuu/basic-aspnet-2024/main/images/html006.png) -->
