@@ -34,7 +34,9 @@
     - 웹페이지 클로닝
         - 핀터레스트 타입 + 부트스트랩 웹페이지 만들기(진행중)
 
-## 5일차 (24.06.04)
+## [5일차 (24.06.04)](https://github.com/HyungJuu/basic-aspnet-2024/blob/main/day05.md)
 - HTML + CSS + js(jQuery) 응용
     - 웹페이지 클로닝
         - 핀터레스트 타입 + 부트스트랩 웹페이지 만들기(완료)
+
+        - [Codehal 유튜버(https://www.youtube.com/@codehal)] 로그인 웹페이지 튜토리얼

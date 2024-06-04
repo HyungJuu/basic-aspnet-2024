@@ -24,9 +24,8 @@
         a:hover { text-decoration: underline; }
 
         img { margin: 0; border: 0; }
-        body { 
-            /* background-color: #f7f5f5;  */
-        }
+        /* body { background-color: #f7f5f5; } */
+
         /* 디자인 적용 */
         #main-section { margin: 0 auto; margin-top: 80px;}
         .paper { width: 180px; margin: 10px 5px; padding: 0; 
@@ -79,7 +78,7 @@
             };
 
             var getPapers = function() {
-                for (var i = 0; i < 30; i++) {
+                for (var i = 0; i < 80; i++) {
                     // ` 멀티라인, ', " + 로 연장
                     // loremflickr.com  |  picsum.photos
                     $(`<div class="paper">
@@ -114,7 +113,7 @@
 
                 $('#darken-background').show(); // display:none -> display:block;
                 $('#darken-background').css('top', $(window).scrollTop());
-                $('body').css('overflow', 'hidden'); // 스크롤을 숨겼기 때문에 화면 상단의 헤더부분이 움직인다(작은화면에서)
+                $('body').css('overflow', 'hidden'); // hidden 스크롤을 숨겼기 때문에 화면 상단의 헤더부분이 움직인다(작은화면에서)
             }
             
             // 라이트박스 숨기기함수 선언
