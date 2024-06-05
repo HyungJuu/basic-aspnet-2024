@@ -65,4 +65,6 @@
     - 웹페이지 클로닝
         - Codehal 슬라이더 애니메이션 웹페이지 튜토리얼 따라하기(완료)
 
+        https://github.com/HyungJuu/basic-aspnet-2024/assets/158007420/2ba55df7-a2f5-4fb9-b6c6-8dede34a571b
+
     - 개인 웹페이지 클로닝
