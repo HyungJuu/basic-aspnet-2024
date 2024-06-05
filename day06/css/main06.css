@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 거의 필수 조건 */
+* {
+    margin: 0; padding: 0; /* 불필요한 여백(margin)과 간격(padding)을 0으로 없앤다 */
+    box-sizing: border-box; 
+    /* 너비와 높이를 계산할 때 패딩과 테두리가 포함... 잘 모르겠음 
+       요소의 너비가 100px, 패딩을 20px으로 설정하면 실제너비가 100px로 유지된다고 한다... */
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* font-family: "Poppins", sans-serif; */
+    margin: 0; padding: 0;
+    background-color: #210002;
+    font-size: 15px;
+}
+.banner {
+    height: 100vh; /* vh : 뷰포트(viewport)높이의 % -> 100vh는 100%로 화면의 전체 높이를 차지함 */
+    position: relative; /* 상대적 위치 */
+    overflow: hidden; /* 콘텐츠가 요소의 크기를 넘어가면 숨김. 즉 요소내에 스크롤바가 나타나지 않음 */
+}
+
+.banner .bg {
+    position: absolute; /* 절대적 위치 */
+    left: 0; bottom: 0;
+    width: 100%; height: 100%; /* .bg 요소의 너비와 높이를 부모요소에 맞춤 -> .banner를 덮음 */
+    background-size: auto 100%; /* 배경의 너비는 자동(원래비율 유지), 높이는 100%(요소의 높이 맞춤) */
+    background-position: center bottom;
+    transition: 0.5s;
+}
+
+.banner .bg-1 {
+    background-image: url(../image06/0.png);
+}
+
+.banner .bg-2 {
+    background-image: url(../image06/1.png);
+}
+
+.banner .bg-3 {
+    background-image: url(../image06/2.png);
+}
+
+.banner .bg-4 {
+    background-image: url(../image06/3.png);
+}
+
+.banner .bg-5 {
+    background-image: url(../image06/4.png);
+}
+
+.banner .bg-6 {
+    background-image: url(../image06/5.png);
+}
+
+.banner .bg-7 {
+    background-image: url(../image06/6.png);
+}
+
+.banner .bg-8 {
+    background-image: url(../image06/7.png);
+}
+
+.banner .bg-9 {
+    background-image: url(../image06/8.png);
+}
+
+.banner h1 {
+    position: absolute;
+    top: 20%;
+    left: 0; width: 100%;
+    text-align: center;
+    font-size: 11rem;
+    font-family: Pacifico;
+    color: white;
+    transition: 0.5s;
+}
+
+.intro {
+    min-height: 50vh; /* 뷰포트 절반(50%) */
+    color: #eee;
+    display:  flex; /* flex 컨테이너로 레이아웃 구성 */
+    flex-direction: column; /* 열(수직방향)로 구성. 기본적으로 행(가로방향)으로 배치 */
+    justify-content: center;
+    align-items: center;
+}
+
+.intro img {
+    width: 130px; height: 130px;
+    border-radius: 50%;
+}
+.intro p {
+    width: 700px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.intro button {
+    background-color: red;
+    padding: 10px 50px;
+    border: 1px solid #591f1d;
+    color: white;
+    font-family: Poppins;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.animation-show {
+    transform: translateY(50px); /* Y축으로 50px 아래로 이동 */
+    opacity: 0; /* 투명도 0 */
+    transition: 0.7s; /* 위의 상태변화를 0.7초 동안 서서히 적용 */
+}
+
+.active .animation-show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* :nth-child(숫자) = 형제 사이에서의 순서에 따라 요소 선택 */
+/* animation-show 클래스를 가진 요소 중 첫번째(img)를 0.3s의 딜레이를 준다 */
+.animation-show:nth-child(2) {
+    transition-delay: 0.3s ;
+}
+
+/* animation-show 클래스를 가진 요소 중 두번째(p)를 0.6s의 딜레이를 준다 */
+.animation-show:nth-child(3) {
+    transition-delay: 0.6s ;
+}
+
+/* animation-show 클래스를 가진 요소 중 세번째(button)를 0.9s의 딜레이를 준다 */
+.animation-show:nth-child(4) {
+    transition-delay: 0.9s ;
+}
+
+.library {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    color: white;
+}
+
+.library img {
+    width: 90%; height: 500px;
+    object-fit: cover; 
+}
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 768px) { /* 화면너비가 768px일때만 적용 */
+    .banner h1 {
+        font-size: 5rem;
+    }
+    .library {
+        grid-template-columns: repeat(2, 1fr); /* 레이아웃을 2개의 열(1fr). 즉 화면너비가 좁아지면 요소들을 2열로 배치한다 */
+    }
+    .library img {
+        height: 300px;
+    }
+}
