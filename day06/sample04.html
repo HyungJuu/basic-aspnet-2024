@@ -136,7 +136,7 @@
         }
         .home-img img:hover {
             box-shadow: 0 0 25px var(--main-color),
-                        0 0 50px var(--main-color)
+                        0 0 50px var(--main-color),
                         0 0 100px var(--main-color);
         }
         .home-content p {
@@ -175,14 +175,15 @@
             font-size: 1.6rem;
             color: black;
             border: 2px solid transparent;
-            letter-spacing:  0.1rem;
+            letter-spacing: 0.1rem;
             font-weight: 600;
             transition: 0.3s ease-in-out;
             cursor: pointer;
         }
+
         .btn:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 50px var(--main-color);
+            box-shadow: 0 0 5px var(--main-color);
         }
         .btn-group {
             display: flex;
@@ -237,14 +238,18 @@
             }
             21%,
             40% {
-                content: "UI / UX Designer";
+                content: "Web Designer";
             }
             41%,
             60% {
-                content: "Web Designer";
+                content: "UI / UX Designer";
             }
             61%, 
             80% {
+                content: "Web Developer";
+            }
+            81%,
+            100% {
                 content: "Software Tester";
             }
         }
@@ -261,7 +266,6 @@
             95% {
                 width: 0;
             }
-
             5%,
             20%,
             25%,
@@ -467,7 +471,7 @@
             gap: 3rem;
         }
 
-        .testimonials-item {
+        .testimonial-item {
             min-height: 550px;
             max-width: 450px;
             background: rgba(0, 0, 0, 0.7);
@@ -486,9 +490,9 @@
             transition: 0.4s ease-in-out;
         }
 
-        .testimonials-item:hover {
+        .testimonial-item:hover {
             border: 3px solid var(--main-color);
-            transform: translateY(-10px)scale(1.03) ;
+            transform: translateY(-10px)scale(1.03);
             box-shadow: 0 0 50px var(--main-color);
         }
 
@@ -747,16 +751,14 @@
                 </a>
             </div>
 
-            <div class="dtn-group">
+            <div class="btn-group">
                 <a href="#" class="btn">Hire</a>
                 <a href="#contact" class="btn">Contact</a>
             </div>
-
+        </div>
             <div class="home-img">
                 <img src="./image/image04/image.jpg" alt="">
             </div>
-            
-        </div>
     </section>
 
     <section class="education" id="education">
@@ -848,11 +850,11 @@
                     <img src="./image/image04/1.jpg" alt="">
                     <h2>Marilyn</h2>
                     <div class="rating">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
                     </div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo sed corporis quos molestias, voluptate ex totam maiores harum sequi accusamus dicta laborum illo neque unde ipsam, tempora vel? Sed, in.</p>
                 </div>
@@ -861,11 +863,11 @@
                     <img src="./image/image04/2.jpg" alt="">
                     <h2>Julia</h2>
                     <div class="rating">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
                     </div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo sed corporis quos molestias, voluptate ex totam maiores harum sequi accusamus dicta laborum illo neque unde ipsam, tempora vel? Sed, in.</p>
                 </div>
@@ -874,11 +876,11 @@
                     <img src="./image/image04/3.jpg" alt="">
                     <h2>Rebecca</h2>
                     <div class="rating">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
                     </div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo sed corporis quos molestias, voluptate ex totam maiores harum sequi accusamus dicta laborum illo neque unde ipsam, tempora vel? Sed, in.</p>
                 </div>
@@ -949,5 +951,33 @@
             © Amelia Morgan | All Rights Reserved
         </p>
     </footer>
+    
+    <script>
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+        let sections = document.querySelectorAll('section');
+        let navLinks = document.querySelectorAll('header nava');
+
+        window.onscroll = () => {
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 150;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                if(top >= offset && top < offset + height) {
+                    navLinks.forEach(links => {
+                        links.classList.remove('active');
+                        document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+                    })
+                }
+            })
+        }
+
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('bx-x');
+            navbar.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
