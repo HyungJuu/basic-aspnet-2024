@@ -74,5 +74,6 @@
 ## 7일차(24.06.07)
 - HTML + CSS + js(jQuery) 응용
     - 개인 웹페이지 클로닝
-
+        - 수정중..
+        
         https://github.com/HyungJuu/basic-aspnet-2024/assets/158007420/63834ffa-dce1-4b42-aafd-a127ee74acb5

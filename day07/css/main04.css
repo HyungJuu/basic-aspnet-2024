@@ -383,6 +383,10 @@ span {
     width: 50px;
 }
 
+.service-box {
+    position: relative;
+}
+
 .services {
     background: var(--bg-color);
     color: black;
@@ -411,8 +415,29 @@ span {
 .service-box:hover {
     background: white;
     color: black;
-    border: 5px solid var(--main-color);
+    border: 3px solid var(--main-color);
     transform: scale(1.03);
+    box-shadow: 0 0 25px var(--main-color);
+}
+/* 서비스박스 Read More 부분 */
+.service-box a {
+    background: white;
+    position: absolute;
+    margin-top: 25px;
+    right: 25px;
+    bottom: 15px;
+    font-size: 12px;
+    padding: 5px;
+    border-color: var(--second-bg-color);
+    box-shadow: 0 0 3px var(--bg-color);
+}
+
+.service-box a:hover {
+    border-color: #00dacb;
+    background: var(--main-color);
+    color: white;
+    text-shadow: 1px 1px 1px var(--bg-color);
+    box-shadow: 0 0 10px var(--main-color);
 }
 
 .service-box .service-info {
