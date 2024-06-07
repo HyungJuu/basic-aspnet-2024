@@ -71,3 +71,8 @@
 
         https://github.com/HyungJuu/basic-aspnet-2024/assets/158007420/3e24c513-51e2-477d-8568-9dd259f6f466
 
+## 7일차(24.06.07)
+- HTML + CSS + js(jQuery) 응용
+    - 개인 웹페이지 클로닝
+
+        https://github.com/HyungJuu/basic-aspnet-2024/assets/158007420/63834ffa-dce1-4b42-aafd-a127ee74acb5
