@@ -1,7 +1,9 @@
+/* 구글 폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* 기본 스타일 초기화 */
 * {
-    margin: 0; padding: 0;
+    margin: 0; padding: 0; /* 불필요한 여백, 간격을 없앤다 */
     box-sizing: border-box;
     text-decoration: none;
     border: none;
@@ -9,28 +11,30 @@
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
-
+/* css 변수. 아래의 색상을 변경하여 전체에 적용되는 색을 한번에 바꿀 수 있다 */
 :root {
-    --bg-color: #080808;
-    --second-bg-color: #131313;
-    --text-color: white;
-    --main-color: #00ffee;
+    --bg-color: #080808; /* 배경색 */
+    --second-bg-color: #131313; /* 보조배경색 */
+    --text-color: white; /* 텍스트색 */
+    --main-color: #00ffee; /* 메인색 */
 }
-
+/* html 기본설정 */
 html {
     font-size: 60%;
     overflow-x: hidden;
 }
-
+/* 본문 스타일 */
 body {
-    background: var(--bg-color);
-    color: var(--text-color);
+    background: var(--bg-color); /* 백그라운드 = 배경색 */
+    color: var(--text-color); /* 본문 색상 = 텍스트색 */
 }
+/* 헤더 스타일 */
 .header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; padding: 4rem 12% 4rem;
+    width: 100%;
+    padding: 4rem 12% 4rem;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
@@ -38,7 +42,7 @@ body {
     align-items: center;
     z-index: 5;
 }
-
+/* 로고 스타일 */
 .logo {
     font-size: 3rem;
     color: var(--text-color);
@@ -49,11 +53,11 @@ body {
 .logo:hover {
     transform: scale(1.1);
 }
-
+/* 로고텍스트 그림자 효과 -> 빛나는 효과 */
 .logo span {
     text-shadow: 0 0 25px var(--main-color);
 }
-
+/* 헤더의 네비게이션바 스타일. 클릭을 통해 해당 위치로 이동이 가능 */
 .navbar a {
     font-size: 1.8rem;
     color: var(--text-color);
@@ -79,7 +83,7 @@ section {
     min-height: 100vh;
     padding: 10rem 12% 10rem;
 }
-
+/* 홈섹션 스타일 */
 .home {
     display: flex;
     align-items: center;
@@ -101,6 +105,7 @@ span {
 .logo span {
     color: var(--main-color);
 }
+/* 홈섹션의 텍스트 스타일 */
 .home-content h3 {
     margin-bottom: 2rem;
     margin-top: 1rem;
@@ -155,7 +160,7 @@ span {
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
 }
-
+/* 버튼 스타일 */
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -216,12 +221,13 @@ span {
     right: -8px;
     animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
-@keyframes cursor {
+/* 반응형 미디어 쿼리? 애니메이션 효과 */
+@keyframes cursor { /* 커서 깜빡임 효과 */
     to {
         border-left: 2px solid var(--main-color);
     }
 }
-@keyframes words {
+@keyframes words { /* 텍스트 변경 효과 */
     0%,
     20% {
         content: "Frontend Designer";
@@ -243,7 +249,7 @@ span {
         content: "Software Tester";
     }
 }
-@keyframes typing {
+@keyframes typing { /* 텍스트 타이핑 효과 */
     10%,
     15%,
     30%,
