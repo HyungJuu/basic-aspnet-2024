@@ -22,7 +22,7 @@
 
     - ASP.NET 종류
         - ~~ASP.NET Webforms : 2000년도 초반에 나오다가 사장된 웹사이트 개발기술~~
-        - **ASP.NET Core 웹앱(MVC) : 가장 기본적인 프론트엔드(HTML, CSS, JS .html) + 백엔드(C# .aspx.cs) 웹사이트 개발**
+        - **ASP.NET Core 웹앱(MVC) : 가장 기본적인 프론트엔드(HTML, CSS, JS .cshtml) + 백엔드(C# .aspx.cs) 웹사이트 개발**
         - **ASP.NET Core 웹 API : 데이터포털, 네이버, 카카오 ,영화API 사이트를 만드는 백엔드(프론트엔드가 없어서 화면이 없음)**
         - Js(Vue, Angular, React) 프론트엔드 + ASP.NET Core 백엔드
         - ~~Edge용 웹 드라이버 테스트 : 엣지 브라우저에 종속된 테스트용~~
@@ -43,3 +43,12 @@
         - MVC 개념도 
 
             <img src="https://raw.githubusercontent.com/HyungJuu/basic-aspnet-2024/main/images/an001.png" width="730">
+
+        - 과거 프론트엔드에 스파게티코드가 심했다면, 현재는 최소화 되어있음 (SpringBoot, Pytho flask 모두 동일)
+        - ISS Expres Serve : VS에서 ASP.NET 웹사이트를 운영하는 개발용 웹서버
+        - index : 웹사이트에서 가장 대문되는 페이지 이름
+        - 파일 저장시 핫다시로드(HotReload) 체크
+        - @로 시작하는 C# 구문 : Tag helper, Html helper로 HTML 구문 내에 C# 코드를 적어서 활용하는 방법 = Razor 구문
+        - Action == HTML에서 form 태그 내에 submit 버튼 클릭 | 링크를 클릭 하는 것, 윈앱에서 이벤트와 동일
+        - ActionResult = 액션이 발생한 후 처리하는 메서드의 결과
+        - 콘솔 서버로그 확인 필수, 프로세스가 종료되면 웹사이트 실행 안됨
