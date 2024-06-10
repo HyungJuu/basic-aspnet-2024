@@ -105,3 +105,10 @@
         - MVC 개념도 
 
             <img src="https://raw.githubusercontent.com/HyungJuu/basic-aspnet-2024/main/images/an001.png" width="730">
+
+## 9일차 (24.07.22)
+- ASP.NET Core MVC
+    - 필요 이론
+    - 연습
+    - 개인 포트폴리오 웹사이트
+    - Bootstrap 테마 적용

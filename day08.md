@@ -51,4 +51,30 @@
         - @로 시작하는 C# 구문 : Tag helper, Html helper로 HTML 구문 내에 C# 코드를 적어서 활용하는 방법 = Razor 구문
         - Action == HTML에서 form 태그 내에 submit 버튼 클릭 | 링크를 클릭 하는 것, 윈앱에서 이벤트와 동일
         - ActionResult = 액션이 발생한 후 처리하는 메서드의 결과
-        - 콘솔 서버로그 확인 필수, 프로세스가 종료되면 웹사이트 실행 안됨
+        - 콘솔 서버로그 확인 필수, 프로세스가 종료되면 웹사이트 실행 안됨\
+
+    - 데이터베이스 연동방법
+        - DB first : 가장 전통적인 DB 연동방식. DB설계, DB구축, C#과 연동
+        - Code first : 최근 트렌드가 되는 DB 연동방식. C# 엔티티 클래스 작성, DB연결 설정 후 실행하면 DB에 테이블이 생성
+        - EntityFramework를 사용하면 아주 손쉽게 구축가능. DB를 잘 모르고 C#, ASP.NET만 알아도 DB를 핸들링 가능
+    
+    - EntityFramework(Core) 설치 &rarr; NuGet패키지
+        - Microsoft.EntityFrameworkCore
+        - Microsoft.EntityFrameworkCore.Tools
+        - Microsoft.EntityFrameworkCore.SqlServer
+
+    - Code first 구현 순서
+        - ASP.NET 프로젝트 생성
+        - EF 패키지 설치
+        - 엔티티 클래스 작성
+        - appsettings.json에 DB 연결문자열 추가
+        - Data/ApplicationDbContext.cs 중간연결 클래스 생성
+        - Program.cs Services 내에 DbContext 종속성을 주입
+        - NuGet 패키지 관리자 > 패키지 관리자 콘솔 실행
+            ```shell
+            PM> add-migration 마이그레이션명
+            Build started...
+            Build succeeded.
+            ...
+            Done.
+            ```
