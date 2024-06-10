@@ -77,3 +77,31 @@
         - 수정중..
         
         https://github.com/HyungJuu/basic-aspnet-2024/assets/158007420/63834ffa-dce1-4b42-aafd-a127ee74acb5
+
+## [8일차(24.06.10)](https://github.com/HyungJuu/basic-aspnet-2024/blob/main/day08.md)
+- ASP.NET
+    - 1990년대 **ASP(Active Server Page)**, 확장자 **(.asp)**
+    - 2000년대 초반 **.NET Framework**, &rarr; **ASP.NET(.aspx)**
+        - 가장 큰 장점 : 윈폼 개발하듯 웹개발을 할 수 있었음
+    - 2009년 **ASP.NET(Model View Controller 디자인패턴)**
+        - 단점 : 윈도우에서만 동작
+    - 2016년 모든 OS플랫폼 동작 **.NET Core** &rarr; **ASP.NET Core**
+
+    - .NET Core 장점
+        - 빠르고 오픈소스
+        - 크로스 플랫폼, OS에 종속받지 않음
+        - 성능!
+
+    - ASP.NET 종류 ...
+
+    - 참조사이트
+        - [MS ASP.NET 설명서](https://learn.microsoft.com/ko-kr/aspnet/core/?view=aspnetcore-3.1)
+        - [닷넷](https://github.com/dotnet)
+        - [믹스드코드](https://mixedcode.com/)
+        - [길벗IT 소스코드](https://github.com/gilbutITbook/006824)
+
+    - ASP.NET Core 웹앱(MVC: Model-View-Controller)
+        - 현재 웹개발의 가장 표준
+        - MVC 개념도 
+
+            <img src="https://raw.githubusercontent.com/HyungJuu/basic-aspnet-2024/main/images/an001.png" width="730">
