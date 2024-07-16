@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
-
+// Code first 개발방식. mssql에서 데이터베이스 테이블을 만드는 것이 아니라 코드로 DB를 만드는 방식
 namespace basicDbHandling.Migrations
 {
     /// <inheritdoc />

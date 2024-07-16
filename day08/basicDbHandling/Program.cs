@@ -12,9 +12,11 @@ namespace basicDbHandling
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             // DbContext 추가 (종속성 주입)
+            // ApplicationDbContext.cs 내용, appsettings.json 정보가 모두 여기에 모여야 함
             builder.Services.AddDbContext<ApplicationDbContext>(option => option.UseSqlServer(
                 builder.Configuration.GetConnectionString("DefaultConnection")
             ));
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

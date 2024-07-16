@@ -1,23 +1,31 @@
 ## 8일차(24.06.10)
 - ASP.NET
-    - 1990년대, MS가 웹 서버기술로 ASP(Active Server Page)를 배포. like JSP(Java Server Page)
-    - ASP는 .NET으로 된 언어가 아닌, VBScript를 사용. 확장자(.asp)
-    - 스파게티 코드 : HTML + CSS + javascript + VBScript 를 짬뽕으로 만든 웹 페이지
-        - 많이 사용되었지만 유지보수가 어렵다
-        - 성능이 나쁘다
+    - 웹퍼블리시 : HTML, CSS, Javascript만 가지고 웹페이지만 개발
+    - 프론트엔드 개발자 : 웹퍼블리시가 만든 웹페이지에 백엔드와 연계를 해서 실제 동작하는 페이지 개발
+        - json, 백엔드, DB 전반적인 개발 지식
 
-    - 2000년대 초반, MS가 .NET Framework 발표
-    - C#, VB.NET, C++.NET 등의 새로운 언어를 배포, 여기에 맞춰서 웹 서버기술을 다시 만듦 &rarr; ASP.NET(.aspx)
-    - 가장 큰 장점 : 윈폼 개발하듯 웹개발을 할 수 있었음
-    - 초창기에는 스파게티 코드를 거의 그대로 사용, 성능 안좋음
-    - 2009년, ASP.NET(Model View Controller 디자인패턴) 공표. 성능이 좋아짐
-        - 하지만, 윈도우에서만 동작
-    - 2016년, 모든 OS플랫폼에서 동작할 수 있는 .NET Core를 재출시
-    - 거기에 웹 서버기술을 또 다시 만듦 -> ASP.NET Core
+    - ASP.NET 역사
+        - 1990년대, MS가 웹 서버기술로 ASP(Active Server Page)를 배포. like JSP(Java Server Page)
+        - ASP는 .NET으로 된 언어가 아닌, VBScript를 사용. 확장자(.asp)
+        - 스파게티 코드 : HTML + CSS + javascript + VBScript 를 짬뽕으로 만든 웹 페이지
+            - 프론트엔드 + 백엔드 소스가 모두 한페이지에 있음
+            - 다만, 현재 프론트엔드도 백엔드 소스가 일부는 포함되어 있음
+            - 많이 사용되었지만 유지보수가 어렵다
+            - 성능이 나쁘다
+
+        - 2000년대 초반, MS가 .NET Framework 발표
+        - C#, VB.NET, C++.NET 등의 새로운 언어를 배포, 여기에 맞춰서 웹 서버기술을 다시 만듦 &rarr; ASP.NET(.aspx)
+        - 가장 큰 장점 : 윈폼 개발하듯 웹개발을 할 수 있었음
+        - 초창기에는 스파게티 코드를 거의 그대로 사용, 성능 안좋음
+        - 2009년, ASP.NET(Model View Controller 디자인패턴) 공표. 성능이 좋아짐
+            - 하지만, 윈도우에서만 동작
+        - 2016년, 모든 OS플랫폼에서 동작할 수 있는 .NET Core를 재출시
+        - 거기에 웹 서버기술을 또 다시 만듦 -> ASP.NET Core
+        - ASP.NET은 C#이 아닌 다른 .NET 언어로도 개발가능. 그중에서 C#을 사용
 
     - .NET Core (현재는 .NET 9.0, Core라는 이름은 사용 안함)의 장점
         - 빠르고 오픈소스
-        - 크로스 플랫폼, OS에 종속받지 않음
+        - **크로스 플랫폼**, OS에 종속받지 않음
         - 성능!
 
     - ASP.NET 종류
@@ -46,7 +54,7 @@
 
         - 과거 프론트엔드에 스파게티코드가 심했다면, 현재는 최소화 되어있음 (SpringBoot, Pytho flask 모두 동일)
         - ISS Expres Serve : VS에서 ASP.NET 웹사이트를 운영하는 개발용 웹서버
-        - index : 웹사이트에서 가장 대문되는 페이지 이름
+        - index.* : 웹사이트에서 가장 대문되는 페이지 이름
         - 파일 저장시 핫다시로드(HotReload) 체크
 
             ![HotReload](https://raw.githubusercontent.com/HyungJuu/basic-aspnet-2024/main/images/an003.png)
@@ -85,3 +93,6 @@
             ...
             Done.
             ```
+
+    - 브라우저 실행 시 NET::ERR_CERT_INVALID 연결 비공개 설정이 안되 화면이 안나타는 경우
+        - 브라우저 화면 클릭, thissunsafe 입력 엔터

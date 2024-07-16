@@ -18,7 +18,7 @@
 - 개발 시 사용하는 것
     - 프론트엔드 전부 + 백엔드 중 하나 + DB
     - 웹 브라우저 F12(개발자도구)
-    - VS Code 플러그인
+    - VS Code 플러그인 : 프론트엔드
         - HTML Code Snippet
         - Live Server
 
