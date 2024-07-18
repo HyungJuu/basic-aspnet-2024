@@ -19,7 +19,7 @@
 
 <section class="py-5">
     <div class="container px-5">
-        <p>
+        <p class="px-1">
             <a asp-asp-controller="Board" asp-action="Create" class="btn btn-primary">
                 <i class="bi bi-file-earmark-plus-fill"></i>&nbsp;글 작성
             </a>
@@ -77,8 +77,10 @@
                             @Convert.ToDateTime(item.RegDate).ToString("yyyy-MM-dd")
                         </td>
                         <td>
-                            @Convert.ToDateTime(item.ModDate).ToString("yyyy-MM-dd")
-
+                            @if (item.ModDate != null)
+                            {
+                                @Convert.ToDateTime(item.ModDate).ToString("yyyy-MM-dd")
+                            }
                         </td>
                         @* <td>
                             <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

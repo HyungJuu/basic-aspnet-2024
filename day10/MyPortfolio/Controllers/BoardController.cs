@@ -22,6 +22,10 @@ namespace MyPortfolio.Controllers
         // GET: Board
         public async Task<IActionResult> Index()
         {
+            // AppDbContext(DB핸들링객체) 안의 Board DBSet객체에다가
+            // 들어있는 데이터를 리스트로 가져와서
+            // 화면으로 보낸다음 출력하라
+            // Views/Board/Index.cshtml을 화면에 뿌려라
             return View(await _context.Board.ToListAsync());
         }
 
@@ -44,8 +48,11 @@ namespace MyPortfolio.Controllers
         }
 
         // GET: Board/Create
+        // 링크를 클릭해서 화면이 전환
+        [HttpGet]
         public IActionResult Create()
         {
+            // Views/Board/Create.cshtml 화면을 출력하라
             return View();
         }
 
@@ -56,10 +63,14 @@ namespace MyPortfolio.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,UserId,Title,Contents,Hit,RegDate,ModDate")] Board board)
         {
+            // 아무값도 입력하지 않으면 ModelState.IsValid는 false
             if (ModelState.IsValid)
             {
-                _context.Add(board);
+                board.ModDate = null;
+                _context.Add(board); // DB객체에 저장
+                // DB Insert 후 Commit 실행
                 await _context.SaveChangesAsync();
+                // 게시판 목록화면으로 돌아감
                 return RedirectToAction(nameof(Index));
             }
             return View(board);
@@ -73,12 +84,12 @@ namespace MyPortfolio.Controllers
                 return NotFound();
             }
 
-            var board = await _context.Board.FindAsync(id);
+            var board = await _context.Board.FindAsync(id); // SELECT * FROM WHERE
             if (board == null)
             {
                 return NotFound();
             }
-            return View(board);
+            return View(board); // Edit.cshtml을 출력하라
         }
 
         // POST: Board/Edit/5
@@ -97,7 +108,10 @@ namespace MyPortfolio.Controllers
             {
                 try
                 {
-                    _context.Update(board);
+                    // 수정날짜 추가
+                    board.ModDate = DateTime.Now; // 수정하는 현재의 날짜시간을 입력
+                    _context.Update(board); // 수정
+                    // DB Update and Commit
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -142,9 +156,10 @@ namespace MyPortfolio.Controllers
             var board = await _context.Board.FindAsync(id);
             if (board != null)
             {
-                _context.Board.Remove(board);
+                _context.Board.Remove(board); // 객체 삭제
             }
 
+            // DB Delete 후에 Commit
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
