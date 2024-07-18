@@ -244,12 +244,15 @@ sup {
   top: -0.5em;
 }
 
+/* 마우스가 없을 때 : 밑줄 x */
 a {
-  color: var(--bs-link-color);
-  text-decoration: underline;
+  color: black;
+  text-decoration: none;
 }
+/* 마우스가 올라갔을 때 : 밑줄 o */
 a:hover {
-  color: var(--bs-link-hover-color);
+  /*color: var(--bs-link-hover-color);*/
+  text-decoration: underline;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {

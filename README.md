@@ -142,7 +142,7 @@
     16. appsettings.json에 DB 연결문자열 추가
     17. Data/AppDbContext.cd 생성
     18. Program.cs 에 DbContext 종속성 주입\
-    19. NuGet 패키지 관리자 콘솔 > Add-Migration, Update-Database 진행
+    19. NuGet 패키지 관리자 콘솔 > Add-Migration 생성명, Update-Database 진행
     20. _layout.cshtml Board 링크 수정
     21. /Controller/BoardController.cs를 생성(모델, 뷰 연결)
         - Entity Framework를 사용하며 뷰가 포함된 MVC 컨트롤러
@@ -151,9 +151,22 @@
         
 ## 10일차(24.07.18)
 - ASP.NET Core 포트폴리오 웹사이트, MyPortfolio
-    1. Board.cs 멤버속성 ModeDate -> ModDate
-    2. 테이블 삭제, 재생성
-    3. 게시판 관련된 화면 수정작업
-    4. 페이징(스크롤, 번호)
-    5. 회원가입, 로그인
-    6. 관리자모드/페이지
+    1. 멤버속성을 잘못만든 경우 (ModDate를 ModeDate로 만듦)
+        - Board.cs : ModeDate -> ModDate
+        - BoardController.cs : ModeDate -> ModDate 
+        - Views/Board/*.cshtml : ModeDate -> ModDate
+        - 오류가 뜨는 위치의 ModeDate 수정
+        - Migrations 폴더 아래의 파일들 모두 삭제
+        - NuGet 패키지 관리자 콘솔 > Add-Migration 생성명, Update-Database 재진행
+    2. ASP.NET Core 템플릿으로 만들어주는 CRUD(Insert, Select, Update, Delete)
+    3. 테이블 삭제, 재생성
+    4. 게시판 관련된 화면 수정작업
+        - Views/Board/Index.cshtml 게시판 리스트화면 수정
+        - Index.cshtml : 테이블 틀 변경, 생성, 상세, 삭제 버튼 제거
+        - Models/Board.cs : 테이블 한글이름 추가 &rarr; DisplayName("제목명")\
+        - Views/Board/Details.cshtml 부트스트랩 적용
+        - 수정, 삭제 등 버튼 디자인 적용
+
+    5. 페이징(스크롤, 번호)
+    6. 회원가입, 로그인
+    7. 관리자모드/페이지

@@ -1,60 +1,35 @@
 ﻿@model MyPortfolio.Models.Board
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Board";
 }
 
-<h1>Details</h1>
+<section class="py-5">
+    <div class="container px-5">
+        <div>
+            <div class="row">
+                <div class="col text-center">
+                    <h3>@Html.DisplayFor(Model => Model.Title)</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <hr />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">@Html.DisplayFor(Model => Model.UserId) ( @Html.DisplayFor(Model => Model.Name) )</div>
+                <div class="col-sm-9"></div>
+            </div>
+            <div class="row">
+                <div class="col">@Html.DisplayFor(Model => Model.RegDate) 작성 </div>
+            </div>
+        </div>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
+</section>
 
-<div>
-    <h4>Board</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserId)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UserId)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Contents)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Contents)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Hit)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Hit)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.RegDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.RegDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ModDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ModDate)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+

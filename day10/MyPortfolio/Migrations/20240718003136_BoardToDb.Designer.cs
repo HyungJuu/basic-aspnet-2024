@@ -12,7 +12,7 @@ using MyPortfolio.Data;
 namespace MyPortfolio.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240716075942_BoardToDb")]
+    [Migration("20240718003136_BoardToDb")]
     partial class BoardToDb
     {
         /// <inheritdoc />
@@ -40,7 +40,7 @@ namespace MyPortfolio.Migrations
                     b.Property<int>("Hit")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("ModeDate")
+                    b.Property<DateTime>("ModDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
