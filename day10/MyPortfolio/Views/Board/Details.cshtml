@@ -50,4 +50,26 @@
     </div>
 </section>
 
+@section Scripts {
+    <script>
+        // 삭제 여부 함수
+        function confirmDelete(id) {
+            var result = confirm("삭제하시겠습니까?"); // 1(true), 0(false) 반환됨
+
+            if (result) {
+                // alert(id);
+                // 삭제 POST를 ajax로 호출
+                $.ajax({
+                    // url: 'https://localhost:7271/Board/Delete' + id  이렇게 쓰는 것은 구식방식(ip나 port번호가 바뀔때마다 변경해야 함)
+                    url: '@Url.Action("Delete")/' + id, // Url.Action --> ASP.NET Core의 백엔드 액션 메서드 호출
+                    type: 'POST', // POST 액션 메서드를 호출
+                    success: function (data) {
+                        window.location.href = '@Url.Action("Index")'; // 문자열로 변경(중요!!)
+                    }
+                });
+            }
+        }
+    </script>
+}
+
 
