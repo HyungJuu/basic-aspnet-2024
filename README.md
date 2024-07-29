@@ -228,6 +228,8 @@
         - Create.cshtml, Edit.cshtml은 동일하게 작업
         - NuGet패키지 Westwind.AspNetCore.Markdown 검색
 
+            <img src="https://raw.githubusercontent.com/HyungJuu/basic-aspnet-2024/main/images/an007.png" width="600">
+
 ## 12일차 (24.07.24)
 - ASP.NET Core 포트폴리오 웹사이트, MyPortfolio
     1. 삭제로직 수정
