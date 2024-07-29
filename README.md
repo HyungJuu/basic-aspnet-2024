@@ -216,6 +216,8 @@
             3. Index() 내 로직 수정
             4. Views/Board/Index.cshtml 화면코드 수정
 
+                https://github.com/user-attachments/assets/8a7e8eab-dc11-49c3-85d6-1300a0512629
+
     5. 검색
         - FromSqlRaw() 메서드 변경
         - html 링크에 ?page=1&search=검색어 추가
@@ -261,8 +263,8 @@
         4. HomeController.cs Login Post 메서드 작성
         5. Logout Get메서드 추가
 
-        https://github.com/user-attachments/assets/984470eb-6088-4ccc-b087-4b3170ec7489
-    
+            https://github.com/user-attachments/assets/78de8215-28b5-4be8-b005-b7ffa8025426
+               
     2. 게시판 글 오류 수정
         1. Board.cs 에 있는 Name, UserID를 삭제, User?로 변경, UserName을 virtual 추가
         2. BoardController.cs 있는 Board 클래스와 관련된 변수도 삭제
