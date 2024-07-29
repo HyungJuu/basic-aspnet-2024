@@ -14,6 +14,31 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.3" />
+    <PackageReference Include="Westwind.AspNetCore.Markdown" Version="3.17.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Board\Create.cshtml" />
+    <None Include="Views\Board\Details.cshtml" />
+    <None Include="Views\Board\Edit.cshtml" />
+    <None Include="Views\Board\Index.cshtml" />
+    <None Include="Views\Contact\Index.cshtml" />
+    <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Home\Login.cshtml" />
+    <None Include="Views\Home\Privacy.cshtml" />
+    <None Include="Views\Home\Project.cshtml" />
+    <None Include="Views\Home\Register.cshtml" />
+    <None Include="Views\Project\Create.cshtml" />
+    <None Include="Views\Project\Delete.cshtml" />
+    <None Include="Views\Project\Details.cshtml" />
+    <None Include="Views\Project\Edit.cshtml" />
+    <None Include="Views\Project\Index.cshtml" />
+    <None Include="Views\Resume\Index.cshtml" />
+    <None Include="Views\Shared\Error.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="Views\_ViewImports.cshtml" />
+    <None Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
