@@ -404,8 +404,21 @@
 ## 14일차(25.07.30)
 - ASP.NET Core 포트폴리오 웹사이트, MyPortfolio
     1. 프로젝트 화면 DB연동하기
+        - 지난 목요일 만들었던 것 확인
+        - ProjectController.cs : Create() Post 메서드 수정
+        - 업로드 확인
+        - Edit.cshtml은 Create.cshtml과 동일하게 수정
+        - Edit() Post 메서드 역시 동일 &rarr; DB에 프로젝트 내용을 추가
+
+        - HomeController.cs 에 Project() Get 메서드에 DB연동 내용 추가
+        - Views/Home/Project.cshtml DB연동 내용 추가 &rarr; 프로젝트에 DB내용을 표시
+
     2. Contact 메일보내기(네이버 연동)
+        - 
+
     3. 부트스트랩 템플릿 커스터마이징, 자기 포트폴리오 사이트 만들기
+
+
 
 
 
