@@ -73,7 +73,7 @@ namespace MyPortfolio.Controllers
                             ON b.UserId = u.Id
                          WHERE b.Title LIKE '%{search}%'
 	                   ) AS base
-                 WHERE base.rowNum BETWEEN {startCount} AND {endCount} ").ToList();           
+                 WHERE base.rowNum BETWEEN {startCount} AND {endCount} ").ToList();
 
 
             return View(list);
@@ -116,7 +116,7 @@ namespace MyPortfolio.Controllers
             if (HttpContext.Session.GetInt32("USER_LOGIN_KEY") == null)
             {
                 // 로그인을 안했으니 로그인창으로 가라
-                return RedirectToAction("Login"); 
+                return RedirectToAction("Login");
             }
 
             ViewData["USER_NAME"] = HttpContext.Session.GetString("USER_NAME");
@@ -147,6 +147,8 @@ namespace MyPortfolio.Controllers
                 _context.Add(board); // DB객체에 저장
                 // DB Insert 후 Commit 실행
                 await _context.SaveChangesAsync();
+
+                TempData["success"] = "성공적으로 저장했습니다.";
                 // 게시판 목록화면으로 돌아감
                 return RedirectToAction(nameof(Index));
             }
@@ -197,7 +199,7 @@ namespace MyPortfolio.Controllers
                     board.ModDate = DateTime.Now; // 현재 수정하는 날짜시간을 입력.
                     _context.Update(board); // 수정
                     // DB UPdate and Commit
-                    await _context.SaveChangesAsync(); 
+                    await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
